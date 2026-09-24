@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class TaskSeven {
+public class TaskF {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
+        String n = sc.nextLine();
 
-        System.out.println(n / 10);
+        System.out.println(n.charAt(n.length() - 1));
     }
 }
