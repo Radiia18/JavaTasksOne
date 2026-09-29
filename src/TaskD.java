@@ -5,6 +5,6 @@ public class TaskD {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int k = scanner.nextInt();
-        System.out.println(k / n);
+        System.out.println(k % n);
     }
 }
