@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class TaskU {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-        int n = scanner.nextInt();
-        int m = scanner.nextInt();
+        int n = in.nextInt();
+        int m = in.nextInt();
 
-        int result = 1 - Math.min(1, (n % m) * (m % n));
+        int p = (n % m) * (m % n);
 
-        System.out.println(result);
+        System.out.println(1 / (p + 1));
     }
 }
