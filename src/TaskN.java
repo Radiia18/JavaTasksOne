@@ -2,14 +2,9 @@ import java.util.Scanner;
 
 public class TaskN {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int n = scanner.nextInt();
-
-        int minutes = 9 * 60 + n * 45
-                + (n / 2) * 15
-                + ((n - 1) / 2) * 5;
-
-        System.out.println(minutes / 60 + " " + minutes % 60);
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = 9 * 60 + a * 45 + (a - 1) / 2 * 5 + a / 2 * 15;
+        System.out.println(b/60 + " " + b%60);
     }
 }
